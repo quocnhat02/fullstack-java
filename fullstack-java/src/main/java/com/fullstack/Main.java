@@ -36,8 +36,12 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println(customers);
         SpringApplication.run(Main.class, args);
+    }
+
+    @GetMapping("/api/v1/customers")
+    public List<Customer> getCustomers() {
+        return customers;
     }
 
     static class Customer {
