@@ -18,6 +18,9 @@ public class Main {
                 new CustomerController(customerService);
         */
 
+        SpringApplication.run(Main.class, args);
+
+        /*
         ConfigurableApplicationContext applicationContext =
                 SpringApplication.run(Main.class, args);
 
@@ -25,6 +28,7 @@ public class Main {
         for (String beanDefinitionName : beanDefinitionNames) {
             System.out.println(beanDefinitionName);
         }
+         */
     }
 
 }
